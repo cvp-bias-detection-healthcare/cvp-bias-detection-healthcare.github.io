@@ -57,8 +57,11 @@ Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 * Manpreet Khural - manpreetkhural@cvpcorp.com
 * Cal Zemelman - calzemelman@cvpcorp.com
+* Lauren Winstead - laurenwinstead@cvpcorp.com
 * Wei Chien - weichien@cvpcorp.com
+* Rose Anderson - roseanderson@cvpcorp.com
 
-Project Link: [https://github.com/CVPcorp/bias-detection-healthcare/]([https://github.com/github_username/repo_name](https://github.com/CVPcorp/bias-detection-healthcare/))
+
+Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
