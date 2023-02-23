@@ -4,7 +4,6 @@
 
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -13,10 +12,12 @@ This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Ch
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+
 ### Prerequisites
 
 * Python 3.8
-* Requirments are in Requirements.txt
+* Requirments are in `scripts\requirements.txt`
+
 
 ### Folder Structure
 The script is using the following directory tree structure:
@@ -33,25 +34,16 @@ The script is using the following directory tree structure:
 ### Installation
 
 1. Clone this repo
-2. Have your input ready. Input is a dataframe with one row per individual. Columns will include:
+2. Save a copy of the input in `input_model/` as `input_model.csv`. `input_model.csv` should include one row per individuals with columns below: 
 * Model prediction (as a probability)
 * Binary outcome (i.e. 0 or 1, where 1 indicates the favorable outcome for the individual being scored)
 * Model label
 * Sample weights
-  
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+3. Execute the python file `python scripts\measure_disparity.py`
+4. An html report will be generated in `reports\measure_report.html`
+5. If the report shows bias, users can mitigate the bias by running `python scripts\mitigate_disparity.py`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
