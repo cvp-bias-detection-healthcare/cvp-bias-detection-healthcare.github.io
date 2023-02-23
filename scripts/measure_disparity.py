@@ -186,7 +186,7 @@ disparity_df['Protected Group'] = disparity_df['Protected Group'].astype(str)
 disparity_df['Observation Count'] = disparity_df['Observation Count'].astype('float64')
             
 # Write sorted table into HTML
-disparity_table = disparity_df[['Protected Group Type','Protected Group','Social Disparity Score']]    .sort_values(by=['Protected Group Type','Social Disparity Score'], ascending = [True, True])    .to_html(classes = 'table table', index=False)
+disparity_table = disparity_df[['Protected Group Type','Protected Group','Social Disparity Score']]    .sort_values(by=['Protected Group Type','Social Disparity Score'], ascending = [True, True])    .to_html(classes = 'table', index=False)
 
             
 ######################            
@@ -201,7 +201,7 @@ for cat in protected_features:
     result = [cat, chi2, p]
     group_dp_chi.loc[len(group_dp_chi)] = result
 group_dp_chi['Fail'] = group_dp_chi['P-Value']<0.01
-group_dp_chi = group_dp_chi.to_html(classes='table table', index=False)
+group_dp_chi = group_dp_chi.to_html(classes='table', index=False)
 
 
 # Group Equalized Opportunity           
@@ -212,7 +212,7 @@ for cat in protected_features:
     result = [cat, chi2, p]
     group_eo_chi.loc[len(group_eo_chi)] = result
 group_eo_chi['Fail'] = group_eo_chi['P-Value']<0.01
-group_eo_chi = group_eo_chi.to_html(classes='table table', index=False)     
+group_eo_chi = group_eo_chi.to_html(classes='table', index=False)     
 
 # Group Precision Parity 
 group_prec_chi = pd.DataFrame(columns=['Protected Group Type', 'Chi-Squared', 'P-Value'])       
@@ -222,7 +222,7 @@ for cat in protected_features:
     result = [cat, chi2, p]
     group_prec_chi.loc[len(group_prec_chi)] = result
 group_prec_chi['Fail'] = group_prec_chi['P-Value']<0.01
-group_prec_chi = group_prec_chi.to_html(classes='table table', index=False)
+group_prec_chi = group_prec_chi.to_html(classes='table', index=False)
 
 # Group KS Statistic Proportions 80% Rule of Thumb (Not Chi-Square)
 group_ks_80 = pd.DataFrame(columns=['Protected Group Type','KS Proportion'])
@@ -232,7 +232,7 @@ for cat in protected_features:
     result = [cat, prop]
     group_ks_80.loc[len(group_ks_80)] = result
 group_ks_80['Meaningful Disparity'] = group_ks_80['KS Proportion']<0.8
-group_ks_80 = group_ks_80.to_html(classes='table table', index=False)
+group_ks_80 = group_ks_80.to_html(classes='table', index=False)
 
 # Paired Group Chi-Squared Test for Demographic Parity
 dp_hm_dict = {}
