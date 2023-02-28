@@ -20,6 +20,8 @@ pred_prob = 'prediction_probability'
 # CRITICAL: Enter column name of true label value
 y_bar = 'readmitted'
 
+# CRITICAL: Enter column name containing sample weights
+samp_weight = 'sw'
 
 ###########
 ## SETUP ##
@@ -93,7 +95,7 @@ def MetricsReport(y_bar, y_hat, group_type, group_name):
 
             
     # Confusion Matrix
-    tn, fp, fn, tp = metrics.confusion_matrix(y_bar,y_hat, labels=[0,1]).ravel()
+    tn, fp, fn, tp = metrics.confusion_matrix(y_bar,y_hat, labels=[0,1], sample_weight = samp_weight).ravel()
     dict_metrics['TN'] = '{:.0f}'.format(tn)
     dict_metrics['FP'] = '{:.0f}'.format(fp)
     dict_metrics['FN'] = '{:.0f}'.format(fn)
@@ -141,8 +143,6 @@ total_model_results=MetricsReport(list(zip(input_df[y_bar].tolist())),
 metrics_df = pd.DataFrame([total_model_results])
             
 # Add metrics for each protected group within the protected_features    
-############### NEED EXCEPTION IF Y_BAR OR Y_HAT DO NOT CONTAIN BOTH 0 AND 1 VALUES (IMBALANCE)
-############### PRINT WHICH Feature and Value failed this requirement
 
 for feature in protected_features:   
     feature_values = input_df[feature].unique().tolist()
@@ -186,7 +186,9 @@ disparity_df['Protected Group'] = disparity_df['Protected Group'].astype(str)
 disparity_df['Observation Count'] = disparity_df['Observation Count'].astype('float64')
             
 # Write sorted table into HTML
-disparity_table = disparity_df[['Protected Group Type','Protected Group','Social Disparity Score']]    .sort_values(by=['Protected Group Type','Social Disparity Score'], ascending = [True, True])    .to_html(classes = 'table', index=False)
+disparity_table = disparity_df[['Protected Group Type','Protected Group','Social Disparity Score']]
+    .sort_values(by=['Protected Group Type','Social Disparity Score'], ascending = [True, True])
+    .to_html(classes = 'table', index=False)
 
             
 ######################            
@@ -553,9 +555,7 @@ for key in ks_hm_dict:
 all_metrics_bp_html = ''
 for key in all_metrics_bp_dict:
     all_metrics_bp_html += str(all_metrics_bp_dict[key])
-
-
-# In[6]:
+# In[6]
 
 
 # 2. Combine them together using a long f-string
@@ -646,7 +646,7 @@ html = f'''
             <h3>KS Statistic</h3>
             <p>Since the KS statistic is a difference in proportions (TPR-FPR), a chi-squared test cannot be performed. Instead, the 
                80% rule-of-thumb is used to ensure that, for a Protected Group Type, the minimum KS statistic is no less than 
-               80% of the maximum KS statistic. If the value in the Meainingful Disparity column is true, there is an issue in
+               80% of the maximum KS statistic. If the value in the Meaningful Disparity column is true, there is an issue in
                Differential Validity for that Protected Group Type.
             </p>
             <p>
@@ -677,7 +677,7 @@ html = f'''
      </div>
      <div class="col-md-6">
         <h3>KS Statistic</h3>
-        <p>To determine which combinations of protected groups are significantly different for the specific metric, we can use a 80% rule of thumn test. </p>
+        <p>To determine which combinations of protected groups are significantly different for the specific metric, we can use the 80% rule of thumb test. </p>
         <p>These heatmaps show which combinations are meaningfully different. The higher the proportion, the less disparity between
             the two respective groups. If the proportion's value is less than 0.8 (smaller value less than 80% of larger value)
             the two groups are deemed to be meaningfully different. </p>
@@ -696,7 +696,7 @@ html = f'''
          </div>
          <div class="col-lg-12">
             <h3 class="page-header">Comparing metrics for all Protected Groups against the number of observations</h3>
-            <p>These scatter plots show whether the groups' metric values and the number of observations are correlated (linear relationship). 
+            <p>These scatter plots show whether the groups' metric values and the numbers of observations are correlated (linear relationship). 
                 Compare only groups of the same type. Whether positive or negative, correlation implies that the metric values for the less frequent groups may be different simply because the model has not learned those groups well and that there might be a feature in the model capturing inherently other characteristics of those groups.
             </p>
             <div class="col-md-6">
@@ -714,13 +714,13 @@ html = f'''
             <div class="col-md-6">
                 <h3>KS Statistic</h3>
                 {ks_sctr_html}
-             </div>
+            </div>
             <div class="col-md-6">
                <h3>Social Disparity Score</h3>
                <p>The Social Disparity score is calculated by first calculating the Social Parity score by taking the harmonic mean of the social fairness metrics. Then that score's value is subtracted for each group from the highest score of that group type. As such, the highest-value groups will have a Social Disparity Score of 0. Suppose a clear linear relationship exists for the group types in this scatter plot. In that case, it indicates that the model is likely overpredicting positive outcomes when there are fewer data in addition to the general correlation implications discussed for the above two plots.
                </p>
                {sds_sctr_html}
-            </div>
+            </div>             
          </div>
          </div>
          <div class="row"  id="overall">
@@ -738,7 +738,6 @@ html = f'''
             {eo_v_ks_sctr_html}
             {prec_v_ks_sctr_html}
             </div>
-
          </div>
       </div>
       <!-- /.container -->
@@ -770,11 +769,3 @@ elif op_sys == 'Linux' or op_sys == 'Darwin':
 else: print('Error: Unknown OS!')
             
             
-            
-
-
-# In[ ]:
-
-
-
-
