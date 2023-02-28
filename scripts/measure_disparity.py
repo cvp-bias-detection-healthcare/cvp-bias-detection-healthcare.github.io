@@ -88,7 +88,7 @@ input_df[['y_hat']] = input_df[['y_hat']].fillna(value=0)
 ## FUNCTIONS ##
 ###############
 
-def MetricsReport(y_bar, y_hat, group_type, group_name):
+def MetricsReport(y_bar, y_hat, group_type, group_name, samp_weight):
     dict_metrics = {}
     dict_metrics['Protected Group Type'] = group_type        
     dict_metrics['Protected Group'] = group_name
@@ -137,7 +137,8 @@ def MetricsReport(y_bar, y_hat, group_type, group_name):
 total_model_results=MetricsReport(list(zip(input_df[y_bar].tolist())),
                                   list(zip(input_df.y_hat.tolist())),
                                   'All Observations',
-                                  'All Observations')
+                                  'All Observations',
+                                  input_df[samp_weight])
 
 # Create dataframe to store metrics
 metrics_df = pd.DataFrame([total_model_results])
@@ -150,7 +151,8 @@ for feature in protected_features:
         results = MetricsReport(list(zip(input_df[y_bar].loc[input_df[feature]==val].tolist())),
                                 list(zip(input_df.loc[input_df[feature]==val].y_hat.tolist())),
                                 feature,
-                                val)
+                                val,
+                                input_df[samp_weight].loc[input_df[feature]==val])
         metrics_df = metrics_df.append(results, ignore_index=True)
 
 # Format metrics
@@ -186,8 +188,8 @@ disparity_df['Protected Group'] = disparity_df['Protected Group'].astype(str)
 disparity_df['Observation Count'] = disparity_df['Observation Count'].astype('float64')
             
 # Write sorted table into HTML
-disparity_table = disparity_df[['Protected Group Type','Protected Group','Social Disparity Score']]
-    .sort_values(by=['Protected Group Type','Social Disparity Score'], ascending = [True, True])
+disparity_table = disparity_df[['Protected Group Type','Protected Group','Social Disparity Score']]\
+    .sort_values(by=['Protected Group Type','Social Disparity Score'], ascending = [True, True])\
     .to_html(classes = 'table', index=False)
 
             
@@ -687,8 +689,8 @@ html = f'''
          <div class="col-lg-12">
             <h3 class="page-header">Visualizing the Metrics</h3>
             <p>All metrics within protected group types compared against each other</p>
-            <p>False Observation metric calculated by FP/(TP+FP) what proportion of the Demographic Parity score
-               is due to False Positives. Suppose a group has much higher Demographic Parity scores than other groups but also higher False Observation rate. In that case, the first step should be to reduce the False Positive Rate and not boost it for the other groups.
+            <p>Precision metric calculated by TP/(TP+FP) what proportion of the Demographic Parity score
+               is due to True Positives. Suppose a protected group has much higher Demographic Parity scores than other groups but also higher False Observation rate. In that case, the objective should be to reduce the False Positive Rate and not boost it for the other groups.
             </p>
             <div class="col-md-12">
               {all_metrics_bp_html}
