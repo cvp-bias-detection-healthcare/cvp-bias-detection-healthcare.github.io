@@ -100,7 +100,8 @@ RAM that is greater than or equal to the dataset. <br>
   <li> Run <code>pip install requirements.txt</code> </li>
  </ol>
 <br />
-### Script Usage
+
+### Script Usage <br />
 To use the **[measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py)** file: <br />
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
