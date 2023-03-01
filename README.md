@@ -52,7 +52,7 @@ a variety of information coupled with expert judgment to recognize sustainable i
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
 * Post Processing Evaluation: Threshold Tuning
-Please reference the **full report** [HERE](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf) for more information on the scope and capabilities
+Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information on the scope and capabilities
 
 #### Bias Metrics
 [INSERT IMAGE]
@@ -61,16 +61,15 @@ Please reference the **full report** [HERE](https://github.com/cvp-bias-detectio
 Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
 measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
 one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
-outcomes across the country.
-Please watch the [Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8) for more guidance on this tool's capabilities and usage.
+outcomes across the country. <br />
+* Please watch the **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** for more guidance on this tool's capabilities and usage.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
-
-* We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
+* **Note:** We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
 
 ### Prerequisites
 * Python 3.8
