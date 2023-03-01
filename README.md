@@ -112,7 +112,7 @@ Once Python is available and an environment is activated:
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li>
 </ol>
   
-**To use the mitigate_disparity.py file:**  
+**To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file:**  
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
   <li>	The mitigate_disparity.py file needs to be imported as a module in another notebook or a .py script. </li>
