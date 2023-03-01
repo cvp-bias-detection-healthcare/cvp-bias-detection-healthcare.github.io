@@ -253,6 +253,7 @@ class Mitigator:
         2. Performs SMOTE with TomekLinks removal to rebalance data.
         3. Retests smoted train dataset for imbalance.
         4. Creates a before and after SMOTE report
+        5. Saves output predicted dataframe as CSV in output_model directory as rebalanced_train.csv
         '''
         # Imbalance Testing
         final_df=pd.DataFrame([])
@@ -386,6 +387,11 @@ class Mitigator:
             with open(os.path.join(out_directory_linux_unix, 'imbalance_report.html'), 'w') as f:
                 f.write(html)
         else: print('Error: Unknown OS!')  
+        if op_sys == 'Windows':
+            test_df.to_csv(os.path.join(outm_directory_windows, 'rebalanced_train.csv'), index=False)
+        elif op_sys == 'Linux' or op_sys == 'Darwin':
+            test_df.to_csv(os.path.join(outm_directory_linux_unix, 'rebalanced_train.csv'), index=False)
+        else: print('Error: Unknown OS!')    
         return smoted_df
         
         
@@ -422,11 +428,12 @@ class Mitigator:
         1. Can only be run on lgbm_output_model created using .fit() method.
         2. Input the test_dataframe with all features, including target y variable, from when initial train-test split performed.
         3. Performs prediction.
-        4. Saves output predicted dataframe as CSV in output_model directory.
+        4. Saves output predicted dataframe as CSV in output_model directory as predicted_test.csv
         5. Outputs predicted dataframe as 'input_df'.
         6. If thresh_tuning = True (default), threshold tuning procedure is performed.
         7. Final output is input_df with column 'y_hat_tuned' containing the prediction probabilities binned to binary outcomes based on
             tuned thresholds.
+        8. Saves output threshold tuned predicted dataframe as CSV in output_model directory as predicted_test.csv
         '''
         test_df = test_dataframe
         # Prepare test dataframe for prediction
@@ -445,9 +452,9 @@ class Mitigator:
         test_df[self.catProt] = test_df[self.catProt].astype(int)
         # Save model output 
         if op_sys == 'Windows':
-            test_df.to_csv(os.path.join(outm_directory_windows, 'pred_test_model.csv'), index=False)
+            test_df.to_csv(os.path.join(outm_directory_windows, 'predicted_test.csv'), index=False)
         elif op_sys == 'Linux' or op_sys == 'Darwin':
-            test_df.to_csv(os.path.join(outm_directory_linux_unix, 'pred_test_model.csv'), index=False)
+            test_df.to_csv(os.path.join(outm_directory_linux_unix, 'predicted_test.csv'), index=False)
         else: print('Error: Unknown OS!')    
         # Reset name
         input_df = test_df
@@ -544,9 +551,9 @@ class Mitigator:
             smoted_input_df=smoted_input_df.fillna(0).reset_index()
             # Save Model data into a dataframe
             if op_sys == 'Windows':
-                smoted_input_df.to_csv(os.path.join(outm_directory_windows,'mitigated_model.csv'))
+                smoted_input_df.to_csv(os.path.join(outm_directory_windows,'thresh_tuned_test.csv'))
             elif op_sys == 'Linux' or op_sys == 'Darwin':
-                smoted_input_df.to_csv(os.path.join(outm_directory_linux_unix,'mitigated_model.csv'))
+                smoted_input_df.to_csv(os.path.join(outm_directory_linux_unix,'thresh_tuned_test.csv'))
             else: print('Error: Unknown OS!')
             return smoted_input_df
         else:
