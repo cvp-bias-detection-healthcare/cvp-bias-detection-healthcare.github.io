@@ -62,8 +62,7 @@ Our team successfully reduced social bias when training and optimizing a LightGB
 measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
 one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
 outcomes across the country.
-
-[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)
+Please watch the [Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8) for more guidance on this tool's capabilities and usage.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
