@@ -128,21 +128,16 @@ RAM that is greater than or equal to the dataset. <br>
     <br />
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
 
-We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at this link:
-https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing
+We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTACT -->
 ## Contact
-
 * Manpreet Khural - manpreetkhural@cvpcorp.com
 * Cal Zemelman - calzemelman@cvpcorp.com
 * Lauren Winstead - laurenwinstead@cvpcorp.com
@@ -151,5 +146,8 @@ Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
 
+For any specific questions regarding the nature and scope of the challenge, please email [EMAIL]
+Have feedback or questions about this challenge? Please send your feedback or question to [NCATSAIBiasChallenge@mail.nih.gov](NCATSAIBiasChallenge@mail.nih.gov)
+Alternate NCATS Challenge POC: [expeditionhacks@blueclarity.io](expeditionhacks@blueclarity.io)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
