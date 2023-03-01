@@ -101,7 +101,8 @@ RAM that is greater than or equal to the dataset. <br>
   <li> Run <code>pip install requirements.txt</code> </li>
  </ol>
 <br />
-**To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** 
+### Script Usage
+To use the **[measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py)** file:
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
   <li> The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. </li> 
@@ -109,7 +110,7 @@ RAM that is greater than or equal to the dataset. <br>
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li>
 </ol>
  <br />
-**To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file:**  
+To use the **[mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py)** file:
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
   <li>	The mitigate_disparity.py file needs to be imported as a module in another notebook or a .py script. </li>
@@ -123,7 +124,6 @@ RAM that is greater than or equal to the dataset. <br>
 </ol>
     <br />
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
