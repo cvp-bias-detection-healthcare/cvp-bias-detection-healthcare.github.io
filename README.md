@@ -98,7 +98,11 @@ RAM that is greater than or equal to the dataset. <br>
 Once Python is available and an environment is activated:
 <br />
 <ol>
-  <li> Run “Git clone https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io” </li>
+  <li> Run https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io  
+    ```python
+    Git clone 
+    ```
+    </li>
   <li> Run “pip install requirements.txt” </li>
  </ol>
 <br />
