@@ -14,7 +14,7 @@ automatically measure certain types of bias and mitigate them without human inte
 This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
 aims to support **complex decision-making** by *giving people simple insights to make smart determinations*. This also helps us identify our own 
 **inherent bias**, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
-bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
+bias not inherent in the real world) can be minimized, and real-world bias can be better understood. <br />
 *Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information*
 
 ### Bias Detection Tool Architecture
