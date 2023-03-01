@@ -1,14 +1,41 @@
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About This Development
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
 
 ### Overview
-Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and mitigation of bias, not a one size fits all approach that may worsen the problem of automation bias. The more we investigated the various forms of bias in AI, the more we realized they are several loosely related problems all falling under one umbrella, with no single indicator capable of summarizing bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
+Artificial intelligence algorithms are increasingly being adopted as decision-making aids with the promise of overcoming biases of human 
+decision-makers. Machine learning models used in this fashion may unintentionally amplify or even create bias because of choices made during
+development, or they may become biased from data that they were trained on. Due to the increasing use of AI systems to supplement regular 
+decision-making and deep-rooted disparities in the US healthcare system where this training data comes from, there have been growing demands 
+for model transparency, explainability, and interpretability to determine the presence of bias. CVP’s Data Science Team investigated ways to 
+automatically measure certain types of bias and mitigate them without human intervention. 
 
-Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using predefined protected and reference classes, we analyze across entire demographic or protected features. We believe that the groups being discriminated against can change over time, and we do not want to introduce any bias by only examining certain classes. By examining all groups, we are able to track these changes and assess holistic disparity. The report dives deep into each protected feature (e.g., race, age, gender) to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, to quickly spot where the bias is and decide on a course of action.
+### Purpose
+Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and mitigation of bias, 
+not a one size fits all approach that may worsen the problem of automation bias. The more we investigated the various forms of bias in AI, 
+the more we realized they are several loosely related problems all falling under one umbrella, with no single indicator capable of summarizing 
+bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires 
+a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
 
-This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own inherent bias, like confirmation bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
+Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
+producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
+predefined protected and reference classes, we analyze across entire demographic or protected features. We believe that the groups being 
+discriminated against can change over time, and we do not want to introduce any bias by only examining certain classes. By examining all groups,
+we are able to track these changes and assess holistic disparity. The report dives deep into each protected feature (e.g., race, age, gender) 
+to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, to quickly spot where the bias is and decide 
+on a course of action.
+
+This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
+aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own 
+inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
+bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
+
+### Outcome
+Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
+measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
+one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
+outcomes across the country.
 
 ### Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
@@ -36,6 +63,8 @@ to reviewers. </br>
 * Population Parameter: Sample Weights
 * Post Processing Evaluation: Threshold Tuning
 
+Please reference the **full report** [HERE]() for more information on the scope and capabilities
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -46,7 +75,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 * Python 3.8
 * Requirments are in `scripts\requirements.txt`
-* Full report is in [INSERT REPORT URL]
+* Full report is in [INSERT REPORT URL]().
 
 ### Folder Structure
 The script is using the following directory tree structure:
@@ -102,15 +131,11 @@ https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sh
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
-
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
@@ -122,7 +147,7 @@ Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 * Wei Chien - weichien@cvpcorp.com
 * Rose Anderson - roseanderson@cvpcorp.com
 
-
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
