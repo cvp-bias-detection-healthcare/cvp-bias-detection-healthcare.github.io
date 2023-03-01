@@ -130,6 +130,7 @@ RAM that is greater than or equal to the dataset. <br>
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
