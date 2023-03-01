@@ -110,6 +110,7 @@ To use the **[measure_disparity.py](https://github.com/cvp-bias-detection-health
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li>
 </ol>
  <br />
+ 
 To use the **[mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py)** file: <br />
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
