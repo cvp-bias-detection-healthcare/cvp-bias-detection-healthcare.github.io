@@ -19,7 +19,6 @@ parallel. Datasets could be passed in via AWS API Gateway and reports delivered 
 If deployed in a cloud server such as AWS or Azure, this solution can supplement a larger setup that harnesses existing AWS and Azure AI bias </br>
 fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
 to reviewers. </br>
-</br>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -27,12 +26,10 @@ to reviewers. </br>
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-
 ### Prerequisites
-
 * Python 3.8
 * Requirments are in `scripts\requirements.txt`
-
+* Full report is in [INSERT REPORT URL]
 
 ### Folder Structure
 The script is using the following directory tree structure:
