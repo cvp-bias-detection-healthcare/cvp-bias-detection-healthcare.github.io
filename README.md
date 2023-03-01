@@ -4,6 +4,8 @@
 
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
 
+### Architecture
+![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
 
 
 <!-- GETTING STARTED -->
@@ -41,11 +43,13 @@ RAM that is greater than or equal to the dataset. <br />
 <br />
 Once Python is available and an environment is activated:
 <br />
-1.	Run “Git clone https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io”
-2.	Run “pip install requirements.txt”
+<ol>
+  <li> Run “Git clone https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io” </li>
+  <li> Run “pip install requirements.txt” </li>
+ </ol>
 <br />
 
-**To use the measure_disparity.py file: ** <br />
+To use the measure_disparity.py file:  <br />
 1.	Open “measure_disparity.py”, located in the scripts folder, in a text editor. <br />
 2.	The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. <br />
 3.	Run “python measure_disparity.py”. An HTML report (“measure_rerport.html”) will be automatically generated in the “reports” folder <br />
@@ -66,8 +70,6 @@ For more detailed information on how the mitigation process works, please refere
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Architecture
-![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
 
 
 <!-- LICENSE -->
