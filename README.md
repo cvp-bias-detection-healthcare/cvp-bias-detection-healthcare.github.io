@@ -12,9 +12,9 @@ our solution consists of only Python files with easy to install dependencies. By
 capabilities include the following:  </br>
 *	Run locally on a laptop or desktop  </br>
 *	Run on physical or virtual server in the cloud </br>
-*	Be loaded into a service like AWS Batch (Docker container) or AWS Lambda (Firecracker VM) which can run thousands of Python programs in  </br>
+*	Be loaded into a service like AWS Batch (Docker container) or AWS Lambda (Firecracker VM) which can run thousands of Python programs in
 parallel. Datasets could be passed in via AWS API Gateway and reports delivered as HTML hosted S3 or CloudFront.
-<br>
+</br>
 If deployed in a cloud server such as AWS or Azure, this solution can supplement a larger setup that harnesses existing AWS and Azure AI bias </br>
 fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
 to reviewers. </br>
