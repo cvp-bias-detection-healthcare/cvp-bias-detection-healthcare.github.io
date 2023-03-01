@@ -52,7 +52,7 @@ a variety of information coupled with expert judgment to recognize sustainable i
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
 * Post Processing Evaluation: Threshold Tuning
-Please reference the **full report** [HERE]() for more information on the scope and capabilities
+Please reference the **full report** [HERE](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf) for more information on the scope and capabilities
 
 #### Bias Metrics
 [INSERT IMAGE]
@@ -76,7 +76,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 * Python 3.8
 * [Requirments](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/requirements.txt) are in `scripts\requirements.txt`
-* Full report is in [INSERT REPORT URL]().
+* Full report is in [Bias Detection Report- NCATS Challenge Submission](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf).
 
 ### Folder Structure
 The script is using the following directory tree structure:
