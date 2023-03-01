@@ -69,9 +69,10 @@ bias not inherent in the real world) can be minimized, and real-world bias can b
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 ## Getting Started
-
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
+* We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
 
 ### Prerequisites
 * Python 3.8
@@ -96,6 +97,7 @@ though you could download our code from GitHub’s website if the latter is prob
 Note: CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should generally have
 RAM that is greater than or equal to the dataset. <br>
 <br>
+
 **Once Python is available and an environment is activated:**
 <br />
 <ol>
@@ -128,20 +130,19 @@ RAM that is greater than or equal to the dataset. <br>
     <br />
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
 
-We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTACT -->
 ## Contact
 * Manpreet Khural - manpreetkhural@cvpcorp.com
-* Cal Zemelman - calzemelman@cvpcorp.com
-* Lauren Winstead - laurenwinstead@cvpcorp.com
-* Wei Chien - weichien@cvpcorp.com
+* Cal Zemelman - calzemelman@cvpcorp.com 
+* Lauren Winstead - laurenwinstead@cvpcorp.com 
+* Wei Chien - weichien@cvpcorp.com 
 * Rose Anderson - roseanderson@cvpcorp.com
 
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
