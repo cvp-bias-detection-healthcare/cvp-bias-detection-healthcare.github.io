@@ -12,10 +12,9 @@ for model transparency, explainability, and interpretability to determine the pr
 automatically measure certain types of bias and mitigate them without human intervention. 
 
 This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
-aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own 
-inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
+aims to support **complex decision-making** by *giving people simple insights to make smart determinations*. This also helps us identify our own 
+**inherent bias**, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
 bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
-
 
 ### Bias Detection Tool Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
@@ -32,9 +31,9 @@ fairness and implementation tools, dashboards, and scorecards and other tools ca
 to reviewers. </br>
 
 #### Bias Detection and Mitigation Tool for Clinical Decision Making
-Our AI tool (Reference Arcxhitecture diagram above) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
+Our AI tool (Reference Architecture diagram above) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
 producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
-predefined protected and reference classes, we analyze across entire demographic or protected features. We believe that the groups being 
+predefined protected and reference classes, we analyze across entire **demographic or protected features**. We believe that the groups being 
 discriminated against can change over time, and we do not want to introduce any bias by only examining certain classes. By examining all groups,
 we are able to track these changes and assess holistic disparity. The report dives deep into each protected feature (e.g., race, age, gender) 
 to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, to quickly spot where the bias is and decide 
