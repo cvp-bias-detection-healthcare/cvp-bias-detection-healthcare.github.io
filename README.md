@@ -50,10 +50,11 @@ Once Python is available and an environment is activated:
 <br />
 
 **To use the measure_disparity.py file:**  <br />
-1.	Open “measure_disparity.py”, located in the scripts folder, in a text editor. <br />
-2.	The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. <br />
-3.	Run “python measure_disparity.py”. An HTML report (“measure_rerport.html”) will be automatically generated in the “reports” folder <br />
-4.	Double click it or transfer to a computer with an internet connected web browser to review it. <br />
+<ol>
+  <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> <br />
+  <li> The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. </li> <br />
+  <li> Run “python measure_disparity.py”. An HTML report (“measure_rerport.html”) will be automatically generated in the “reports” folder </li> <br />
+  <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li> <br />
 <br />
 
 **To use the mitigate_disparity.py file:**
@@ -67,6 +68,9 @@ Once Python is available and an environment is activated:
 8.	Once all required parameter inputs are defined, initialize the Mitigator object and call its methods in this order: transform(), fit(), predict(), measure(). These together will generate the “imbalance_report.html” and the “mitigate_report.html” (same format analysis as “measure_report.html”) in the reports folder. It also outputs the transformed train dataset, the predicted test dataset, and the threshold tuned predicted test dataset to help build an audit trail.
 <br />
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
+
+We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at this link:
+https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
