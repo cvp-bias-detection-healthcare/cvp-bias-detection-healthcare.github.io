@@ -15,7 +15,6 @@ This tool was inspired by our hands-on experience that bias can manifest in many
 aims to support **complex decision-making** by *giving people simple insights to make smart determinations*. This also helps us identify our own 
 **inherent bias**, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
 bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
-
 *Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information*
 
 ### Bias Detection Tool Architecture
@@ -62,7 +61,6 @@ Our team successfully reduced social bias when training and optimizing a LightGB
 measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
 one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
 outcomes across the country.
-* Please watch the **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** for more guidance on this tool's capabilities and usage.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -103,6 +101,7 @@ RAM that is greater than or equal to the dataset. <br>
 <br />
 
 ### Script Usage <br />
+* Watch CVP's **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** to walk through the tool's usage.<br /> 
 **To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** <br />
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
