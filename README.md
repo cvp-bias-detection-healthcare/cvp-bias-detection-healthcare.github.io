@@ -3,7 +3,7 @@
 ## About This Development
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
 
-### Overview
+### Bias Detection and Mitigation Tool for Clinical Decision Making
 Artificial intelligence algorithms are increasingly being adopted as decision-making aids with the promise of overcoming biases of human 
 decision-makers. Machine learning models used in this fashion may unintentionally amplify or even create bias because of choices made during
 development, or they may become biased from data that they were trained on. Due to the increasing use of AI systems to supplement regular 
@@ -11,7 +11,6 @@ decision-making and deep-rooted disparities in the US healthcare system where th
 for model transparency, explainability, and interpretability to determine the presence of bias. CVP’s Data Science Team investigated ways to 
 automatically measure certain types of bias and mitigate them without human intervention. 
 
-### Purpose
 Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and mitigation of bias, 
 not a one size fits all approach that may worsen the problem of automation bias. The more we investigated the various forms of bias in AI, 
 the more we realized they are several loosely related problems all falling under one umbrella, with no single indicator capable of summarizing 
@@ -31,13 +30,7 @@ aims to support complex decision-making by giving people simple insights to make
 inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
 bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
 
-### Outcome
-Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
-measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
-one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
-outcomes across the country.
-
-### Architecture
+### Bias Detection Tool Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
 
 To make our solution as easy to use as possible in multiple environments (and because we are big fans of open review and collaboration),  </br>
@@ -53,10 +46,7 @@ If deployed in a cloud server such as AWS or Azure, this solution can supplement
 fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
 to reviewers. </br>
 
-### Bias Metrics
-[INSERT IMAGE]
-
-### Capabilities
+#### Capabilities
 * Calculating the Mitigation-centric Bias Measurements
 * Rebalancing Transformation on Train SMOTE- TomekLinks
 * Pre- and Post-Hoc Imbalance Reporting
@@ -65,6 +55,16 @@ to reviewers. </br>
 
 Please reference the **full report** [HERE]() for more information on the scope and capabilities
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Bias Metrics
+[INSERT IMAGE]
+
+#### Outcome
+Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
+measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
+one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
+outcomes across the country.
+[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)
 
 <!-- GETTING STARTED -->
 ## Getting Started
