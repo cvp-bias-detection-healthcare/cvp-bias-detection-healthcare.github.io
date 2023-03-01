@@ -1,8 +1,14 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
+
+### Overview
+Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and mitigation of bias, not a one size fits all approach that may worsen the problem of automation bias. The more we investigated the various forms of bias in AI, the more we realized they are several loosely related problems all falling under one umbrella, with no single indicator capable of summarizing bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
+
+Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using predefined protected and reference classes, we analyze across entire demographic or protected features. We believe that the groups being discriminated against can change over time, and we do not want to introduce any bias by only examining certain classes. By examining all groups, we are able to track these changes and assess holistic disparity. The report dives deep into each protected feature (e.g., race, age, gender) to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, to quickly spot where the bias is and decide on a course of action.
+
+This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own inherent bias, like confirmation bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
 
 ### Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
@@ -19,6 +25,17 @@ parallel. Datasets could be passed in via AWS API Gateway and reports delivered 
 If deployed in a cloud server such as AWS or Azure, this solution can supplement a larger setup that harnesses existing AWS and Azure AI bias </br>
 fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
 to reviewers. </br>
+
+### Bias Metrics
+[INSERT IMAGE]
+
+### Capabilities
+* Calculating the Mitigation-centric Bias Measurements
+* Rebalancing Transformation on Train SMOTE- TomekLinks
+* Pre- and Post-Hoc Imbalance Reporting
+* Population Parameter: Sample Weights
+* Post Processing Evaluation: Threshold Tuning
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
