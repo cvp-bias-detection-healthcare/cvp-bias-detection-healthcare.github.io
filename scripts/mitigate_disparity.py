@@ -35,15 +35,6 @@ try:
 except Exception as e:
     print('Error:', e)
 
-# Define Input Data Paths for OS
-in_data_directory_linux_unix = r'../data'
-in_data_directory_windows = r'..\data'
-
-# Define Input Model Paths for OS
-in_directory_linux_unix = r'../input_model'
-in_directory_windows = r'..\input_model'
-
-
 # Define Output Model Paths for OS
 outm_directory_linux_unix = r'../output_model'
 outm_directory_windows =r'..\output_model'
