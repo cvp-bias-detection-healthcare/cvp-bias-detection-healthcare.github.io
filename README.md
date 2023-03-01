@@ -36,11 +36,11 @@ The script is using the following directory tree structure:
 
 
 ### Installation
-The only technical requirements before running are a Python environment setup on the computer and a Git client to retrieve the code, <br />
-though you could download our code from GitHub’s website if the latter is problematic. We recommend Anaconda which has setup directions here.  <br />
-CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should generally have <br />
-RAM that is greater than or equal to the dataset. <br />
-<br />
+The only technical requirements before running are a Python environment setup on the computer and a Git client to retrieve the code, 
+though you could download our code from GitHub’s website if the latter is problematic. We recommend Anaconda which has setup directions here.  
+CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should generally have
+RAM that is greater than or equal to the dataset. <br>
+<br>
 Once Python is available and an environment is activated:
 <br />
 <ol>
