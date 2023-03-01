@@ -134,7 +134,6 @@ For more detailed information on how the mitigation process works, please refere
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -144,10 +143,9 @@ Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 * Lauren Winstead - laurenwinstead@cvpcorp.com 
 * Wei Chien - weichien@cvpcorp.com 
 * Rose Anderson - roseanderson@cvpcorp.com
-
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
 
-For any specific questions regarding the nature and scope of the challenge, please email [EMAIL]
+### NCATS POC
 Have feedback or questions about this challenge? Please send your feedback or question to [NCATSAIBiasChallenge@mail.nih.gov](NCATSAIBiasChallenge@mail.nih.gov)
 Alternate NCATS Challenge POC: [expeditionhacks@blueclarity.io](expeditionhacks@blueclarity.io)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
