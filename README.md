@@ -104,7 +104,7 @@ Once Python is available and an environment is activated:
  </ol>
 <br />
 
-**To use the measure_disparity.py file:** 
+**To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** 
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
   <li> The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. </li> 
