@@ -31,22 +31,6 @@ aims to support complex decision-making by giving people simple insights to make
 inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
 bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
 
-### Bias Detection Tool Architecture
-![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
-
-To make our solution as easy to use as possible in multiple environments (and because we are big fans of open review and collaboration),  </br>
-our solution consists of only Python files with easy to install dependencies. 
-
-By following the directions above, the tool’s architectural capabilities include the following:  </br>
-*	Run locally on a laptop or desktop  </br>
-*	Run on physical or virtual server in the cloud </br>
-*	Be loaded into a service like AWS Batch (Docker container) or AWS Lambda (Firecracker VM) which can run thousands of Python programs in
-parallel. Datasets could be passed in via AWS API Gateway and reports delivered as HTML hosted S3 or CloudFront.
-
-If deployed in a cloud server such as AWS or Azure, this solution can supplement a larger setup that harnesses existing AWS and Azure AI bias </br>
-fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
-to reviewers. </br>
-
 #### Capabilities
 * Calculating the Mitigation-centric Bias Measurements
 * Rebalancing Transformation on Train SMOTE- TomekLinks
@@ -58,6 +42,21 @@ Please reference the **full report** [HERE]() for more information on the scope 
 
 #### Bias Metrics
 [INSERT IMAGE]
+
+### Bias Detection Tool Architecture
+![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
+
+By following the installation directions (installation section of readme.md), the tool’s architectural capabilities include the following:  </br>
+*	Run locally on a laptop or desktop  </br>
+*	Run on physical or virtual server in the cloud </br>
+*	Be loaded into a service like AWS Batch (Docker container) or AWS Lambda (Firecracker VM) which can run thousands of Python programs in
+parallel. Datasets could be passed in via AWS API Gateway and reports delivered as HTML hosted S3 or CloudFront.
+
+**Cloud Deployment** </br>
+If deployed in a cloud server such as AWS or Azure, this solution can supplement a larger setup that harnesses existing AWS and Azure AI bias </br>
+fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
+to reviewers. </br>
+
 
 #### Outcome
 Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
