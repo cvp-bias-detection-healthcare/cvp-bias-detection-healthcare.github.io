@@ -37,13 +37,16 @@ The script is using the following directory tree structure:
 
 1. Clone this repo
 2. Save a copy of the input in `input_model/` as `input_model.csv`. `input_model.csv` should include one row per individuals with columns below: 
+```
 * Model prediction (as a probability)
 * Binary outcome (i.e. 0 or 1, where 1 indicates the favorable outcome for the individual being scored)
 * Model label
 * Sample weights
+```
 3. Execute the python file `python scripts\measure_disparity.py`
 4. An html report will be generated in `reports\measure_report.html`
 5. If the report shows bias, users can mitigate the bias by running `python scripts\mitigate_disparity.py`
+6. Html reports will be generated in `reports\mitigate_report.html` and `reports\imbalance_report.html`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
