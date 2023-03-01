@@ -55,9 +55,10 @@ Once Python is available and an environment is activated:
   <li> The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. </li> <br />
   <li> Run “python measure_disparity.py”. An HTML report (“measure_rerport.html”) will be automatically generated in the “reports” folder </li> <br />
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li> <br />
-<br />
+</ol>
+  <br />
 
-**To use the mitigate_disparity.py file:**
+**To use the mitigate_disparity.py file:**  <br />
 1.	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input
 2.	The “mitigate_disparity.py” file needs to be imported as a module in another notebook or a .py script.
 3.	For ease of use, we have included a “run_mitigate.ipynb” sample notebook which is setup to use the object and its methods to perform a full mitigation
