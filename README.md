@@ -36,7 +36,7 @@ If deployed in a cloud server such as AWS or Azure, this solution can supplement
 fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
 to reviewers. </br>
 
-#### Bias Detection and Mitigation Tool for Clinical Decision Making
+### Bias Detection and Mitigation Tool for Clinical Decision Making
 Our AI tool (Reference Architecture diagram above) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
 producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
 predefined protected and reference classes, we analyze across entire **demographic or protected features**. We believe that the groups being 
@@ -51,14 +51,14 @@ the more we realized they are several loosely related problems all falling under
 bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires 
 a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
 
-#### Mitigation Capabilities
+### Mitigation Capabilities
 * Calculating the Mitigation-centric Bias Measurements
 * Rebalancing Transformation on Train SMOTE- TomekLinks
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
 * Post Processing Evaluation: Threshold Tuning <br />
 
-#### Bias Metrics
+### Bias Metrics
 ![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
