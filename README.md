@@ -111,7 +111,7 @@ RAM that is greater than or equal to the dataset. <br>
 </ol>
  <br />
  
-**To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file: <br />
+**To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file:** <br />
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
   <li>	The mitigate_disparity.py file needs to be imported as a module in another notebook or a .py script. </li>
