@@ -3,19 +3,13 @@
 ## About This Development
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
 
-### Bias Detection and Mitigation Tool for Clinical Decision Making
+### Overview
 Artificial intelligence algorithms are increasingly being adopted as decision-making aids with the promise of overcoming biases of human 
 decision-makers. Machine learning models used in this fashion may unintentionally amplify or even create bias because of choices made during
 development, or they may become biased from data that they were trained on. Due to the increasing use of AI systems to supplement regular 
 decision-making and deep-rooted disparities in the US healthcare system where this training data comes from, there have been growing demands 
 for model transparency, explainability, and interpretability to determine the presence of bias. CVP’s Data Science Team investigated ways to 
 automatically measure certain types of bias and mitigate them without human intervention. 
-
-Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and mitigation of bias, 
-not a one size fits all approach that may worsen the problem of automation bias. The more we investigated the various forms of bias in AI, 
-the more we realized they are several loosely related problems all falling under one umbrella, with no single indicator capable of summarizing 
-bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires 
-a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
 
 Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
 producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
@@ -24,6 +18,13 @@ discriminated against can change over time, and we do not want to introduce any 
 we are able to track these changes and assess holistic disparity. The report dives deep into each protected feature (e.g., race, age, gender) 
 to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, to quickly spot where the bias is and decide 
 on a course of action.
+
+#### Bias Detection and Mitigation Tool for Clinical Decision Making
+Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and mitigation of bias, 
+not a one size fits all approach that may worsen the problem of automation bias. The more we investigated the various forms of bias in AI, 
+the more we realized they are several loosely related problems all falling under one umbrella, with no single indicator capable of summarizing 
+bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires 
+a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
 
 This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
 aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own 
@@ -54,7 +55,6 @@ to reviewers. </br>
 * Post Processing Evaluation: Threshold Tuning
 
 Please reference the **full report** [HERE]() for more information on the scope and capabilities
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Bias Metrics
 [INSERT IMAGE]
@@ -66,6 +66,7 @@ one executable Python script and one Python module, it will first measure and th
 outcomes across the country.
 [Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 ## Getting Started
 
