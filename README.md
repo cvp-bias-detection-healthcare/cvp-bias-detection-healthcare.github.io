@@ -115,7 +115,7 @@ Once Python is available and an environment is activated:
 **To use the mitigate_disparity.py file:**  
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
-  <li>	The [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file needs to be imported as a module in another notebook or a .py script. </li>
+  <li>	The mitigate_disparity.py file needs to be imported as a module in another notebook or a .py script. </li>
   <li>	For ease of use, we have included a “run_mitigate.ipynb” sample notebook which is setup to use the object and its methods to perform a full mitigation </li>
   <li>	You may run this notebook as is with our sample data file (“diabetes_data”) or copy its contents for use with your own dataset </li>
   <li>	For the latter, you will need to define your train and test pandas dataframes </li>
