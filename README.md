@@ -54,7 +54,7 @@ a variety of information coupled with expert judgment to recognize sustainable i
 Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information on the scope and capabilities
 
 #### Bias Metrics
-[INSERT IMAGE]
+![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
 
 #### Outcome
 Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
