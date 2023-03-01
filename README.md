@@ -11,6 +11,11 @@ decision-making and deep-rooted disparities in the US healthcare system where th
 for model transparency, explainability, and interpretability to determine the presence of bias. CVP’s Data Science Team investigated ways to 
 automatically measure certain types of bias and mitigate them without human intervention. 
 
+This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
+aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own 
+inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
+bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
+
 #### Bias Detection and Mitigation Tool for Clinical Decision Making
 Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
 producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
@@ -32,7 +37,6 @@ a variety of information coupled with expert judgment to recognize sustainable i
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
 * Post Processing Evaluation: Threshold Tuning
-
 Please reference the **full report** [HERE]() for more information on the scope and capabilities
 
 #### Bias Metrics
@@ -58,20 +62,15 @@ measurement and mitigation. Our solution is runnable on any modern PC, in an off
 one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
 outcomes across the country.
 
-**Inspiration**
-This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
-aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own 
-inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
-bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
-
 [Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 ## Getting Started
-
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
+* We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
 
 ### Prerequisites
 * Python 3.8
@@ -96,10 +95,11 @@ though you could download our code from GitHub’s website if the latter is prob
 Note: CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should generally have
 RAM that is greater than or equal to the dataset. <br>
 <br>
+
 **Once Python is available and an environment is activated:**
 <br />
 <ol>
-  <li> Run <code>Git clone</code>  on this repository (Reference: https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io)  
+  <li> Run <code>Git clone</code> on the [cvp-bias-detection-healthcare.github.io](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io) repository
     </li>
   <li> Run <code>pip install requirements.txt</code> </li>
  </ol>
@@ -128,20 +128,19 @@ RAM that is greater than or equal to the dataset. <br>
     <br />
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
 
-We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTACT -->
 ## Contact
 * Manpreet Khural - manpreetkhural@cvpcorp.com
-* Cal Zemelman - calzemelman@cvpcorp.com
-* Lauren Winstead - laurenwinstead@cvpcorp.com
-* Wei Chien - weichien@cvpcorp.com
+* Cal Zemelman - calzemelman@cvpcorp.com 
+* Lauren Winstead - laurenwinstead@cvpcorp.com 
+* Wei Chien - weichien@cvpcorp.com 
 * Rose Anderson - roseanderson@cvpcorp.com
 
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
