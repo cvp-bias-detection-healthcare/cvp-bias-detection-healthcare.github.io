@@ -50,8 +50,8 @@ a variety of information coupled with expert judgment to recognize sustainable i
 * Rebalancing Transformation on Train SMOTE- TomekLinks
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
-* Post Processing Evaluation: Threshold Tuning
-Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information on the scope and capabilities
+* Post Processing Evaluation: Threshold Tuning <br />
+*Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information on the scope and capabilities*
 
 #### Bias Metrics
 ![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
