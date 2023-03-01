@@ -16,6 +16,8 @@ aims to support **complex decision-making** by *giving people simple insights to
 **inherent bias**, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
 bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
 
+*Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information*
+
 ### Bias Detection Tool Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
 
@@ -51,7 +53,6 @@ a variety of information coupled with expert judgment to recognize sustainable i
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
 * Post Processing Evaluation: Threshold Tuning <br />
-*Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information on the scope and capabilities*
 
 #### Bias Metrics
 ![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
