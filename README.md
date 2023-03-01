@@ -48,6 +48,9 @@ The script is using the following directory tree structure:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Architecture
+![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
+
 <!-- LICENSE -->
 ## License
 
