@@ -32,7 +32,7 @@ fairness and implementation tools, dashboards, and scorecards and other tools ca
 to reviewers. </br>
 
 #### Bias Detection and Mitigation Tool for Clinical Decision Making
-Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
+Our AI tool (Reference Arcxhitecture diagram above) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
 producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
 predefined protected and reference classes, we analyze across entire demographic or protected features. We believe that the groups being 
 discriminated against can change over time, and we do not want to introduce any bias by only examining certain classes. By examining all groups,
