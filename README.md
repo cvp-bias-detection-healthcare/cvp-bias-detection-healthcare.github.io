@@ -64,8 +64,8 @@ one executable Python script and one Python module, it will first measure and th
 outcomes across the country.
 
 [Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
@@ -96,7 +96,6 @@ though you could download our code from GitHub’s website if the latter is prob
 Note: CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should generally have
 RAM that is greater than or equal to the dataset. <br>
 <br>
-
 **Once Python is available and an environment is activated:**
 <br />
 <ol>
@@ -105,7 +104,6 @@ RAM that is greater than or equal to the dataset. <br>
   <li> Run <code>pip install requirements.txt</code> </li>
  </ol>
 <br />
-
 **To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** 
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
@@ -113,7 +111,7 @@ RAM that is greater than or equal to the dataset. <br>
   <li> Run “python measure_disparity.py”. An HTML report (“measure_rerport.html”) will be automatically generated in the “reports” folder </li> 
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li>
 </ol>
-  
+ <br />
 **To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file:**  
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
