@@ -20,6 +20,11 @@ bias not inherent in the real world) can be minimized, and real-world bias can b
 ### Bias Detection Tool Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
 
+Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
+measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
+one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
+outcomes across the country.
+
 By following the installation directions below, the tool’s **architectural capabilities** include the following:  </br>
 *	Run locally on a laptop or desktop  </br>
 *	Run on physical or virtual server in the cloud </br>
@@ -46,7 +51,7 @@ the more we realized they are several loosely related problems all falling under
 bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires 
 a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
 
-#### Capabilities
+#### Mitigation Capabilities
 * Calculating the Mitigation-centric Bias Measurements
 * Rebalancing Transformation on Train SMOTE- TomekLinks
 * Pre- and Post-Hoc Imbalance Reporting
@@ -56,11 +61,6 @@ a variety of information coupled with expert judgment to recognize sustainable i
 #### Bias Metrics
 ![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
 
-#### Outcome
-Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
-measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
-one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
-outcomes across the country.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
