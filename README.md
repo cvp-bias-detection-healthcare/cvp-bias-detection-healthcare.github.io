@@ -8,7 +8,7 @@ Artificial intelligence algorithms are increasingly being adopted as decision-ma
 decision-makers. Machine learning models used in this fashion may unintentionally amplify or even create bias because of choices made during
 development, or they may become biased from data that they were trained on. Due to the increasing use of AI systems to supplement regular 
 decision-making and deep-rooted disparities in the US healthcare system where this training data comes from, there have been growing demands 
-for model transparency, explainability, and interpretability to determine the presence of bias. CVP’s Data Science Team investigated ways to 
+for model transparency, explainability, and interpretability to determine the presence of bias. **CVP’s Data Science Team** investigated ways to 
 automatically measure certain types of bias and mitigate them without human intervention. 
 
 This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
