@@ -127,6 +127,35 @@ RAM that is greater than or equal to the dataset. <br>
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Clinical Setting Usage
+To use our tool to evaluate and improve an ML model* used in the prediction of an adverse event or diagnosis of a disease 
+or condition, one should:
+* This challenge and our tool assume you already have a trained LightGBM model from which you have used to generate predictions
+for the test set. If the model is not LightGBM, steps 1-5 below are still functional
+1.	Save the predicted test set as CSV.
+2.	Run the measurement program which will produce a report showing how the model performed across and within the protected 
+features.
+3.	At a minimum, create a review group of a data scientist (ideally the one who made the model) and a medical practitioner who
+is familiar with treating or diagnosing the condition. 
+4.	Have this group examine the report to determine what was found to be biased and where they think the bias is coming from. 
+The report will highlight areas of concern, but no AI will have visibility into sampling problems that may have impacted the 
+training data or domain knowledge as to whether that disparity is normal. For example, if the model was for the diagnosis of 
+sickle cell anemia, Alzheimer’s, Parkinson’s or another condition that has uneven impact across protected features (e.g., age,
+race), this may be expected and not a large concern. 
+5.	The review team should decide if the bias report has found apparent social/predictive biases or whether the issue may be 
+systemic, sampling, or another type of bias where a new training dataset would be more appropriate.
+6.	If team determine the issue is due to model bias and the model algorithm is not LightGBM, proceed to run a LightGBM version 
+of the model. Rerun measure for it the mitigation tool. This will attempt to lower the apparent rate of disparity in the model and 
+yield a fairer outcome.  
+
+### Ethical and Trustworthy AI 
+<ol>
+| <li> Responsible and Accountable </li> | <li> Neutral |
+| <li> Quality and integrity </li> | <li> |
+| <li> Privacy and Security</li> | <li> |
+| <li> Fairness</li> | <li> |
+| <li> Sustainabile</li> | <li> |
+
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
