@@ -7,7 +7,7 @@ This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Ch
 ### Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
 
-To make our solution as easy to use as possible in multiple environments (and because we are big fans of open review and collaboration), 
+To make our solution as easy to use as possible in multiple environments (and because we are big fans of open review and collaboration),  </br>
 our solution consists of only Python files with easy to install dependencies. By following the directions above, the tool’s architectural 
 capabilities include the following:
 •	Run locally on a laptop or desktop
