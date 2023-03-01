@@ -5,7 +5,6 @@
 This is Team CVP's solution to [NIH NCAT's Bias Detection Tools in HealthCare Challenge]( https://expeditionhacks.com/bias-detection-healthcare/)
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -34,22 +33,58 @@ The script is using the following directory tree structure:
 
 
 ### Installation
-
-1. Clone this repo
-2. Save a copy of the input in `input_model/` as `input_model.csv`. `input_model.csv` should include one row per individuals with columns below: 
-* Model prediction (as a probability)
-* Binary outcome (i.e. 0 or 1, where 1 indicates the favorable outcome for the individual being scored)
-* Model label
-* Sample weights
-3. Execute the python file `python scripts\measure_disparity.py`
-4. An html report will be generated in `reports\measure_report.html`
-5. If the report shows bias, users can mitigate the bias by running `python scripts\mitigate_disparity.py`
+The only technical requirements before running are a Python environment setup on the computer and a Git client to retrieve the code, <br />
+though you could download our code from GitHub’s website if the latter is problematic. We recommend Anaconda which has setup directions  <br />
+here. CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should  <br />
+generally have RAM that is greater than or equal to the dataset. <br />
+<br />
+Once Python is available and an environment is activated:<br />
+1.	Run “Git clone https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io”
+2.	Run “pip install requirements.txt”
+<br />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Overview
+Our goal for this project was to develop a broad, user-friendly set of diagnostics and tools for the measurement and <br /> 
+mitigation of bias, not a one size fits all approach that may worsen the problem of automation bias. The more we <br /> 
+investigated the various forms of bias in AI, the more we realized they are several loosely related problems all <br /> 
+falling under one umbrella, with no single indicator capable of summarizing bias. Much like the complexity surrounding <br /> 
+“solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires a variety of <br /> 
+information coupled with expert judgment to recognize sustainable improvements over time. <br /> 
+
 ### Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
+
+Our AI tool (Figure 1) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by producing <br /> 
+an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using  <br /> 
+predefined protected and reference classes, we analyze  across entire demographic or protected features. We believe that the groups <br /> 
+being discriminated against can change over time, and the advantaged can become the  disadvantaged. By examining across all classes of  <br /> 
+a feature, we are able to track these changes and assess disparity independent of them. The report dives deep into each protected <br /> 
+feature (e.g., race, age, gender) to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, <br /> 
+to quickly spot where the bias is and decide on a course of action. <br /> 
+<br /> 
+When evidence of bias is detected, the reviewer has the option to run the mitigation step which consists of <br /> 
+(1) rebalancing the train dataset to mitigate sampling bias and <br />
+(2) tuning the model thresholds to improve equalized opportunity, demographic parity, precision, and the false positive rates directly, <br /> 
+thus enhancing model performance across protected groups. While our measure script is ML model agnostic, our mitigation script is currently <br /> 
+limited to LightGBM. <br /> 
+<br /> 
+The mitigation approach however could be easily expanded to other ML models or made model agnostic altogether in future iterations.
+
+### Metrics Utilized
+[insert image]
+
+### Mitigation Capabilities
+* Calculating the Mitigation-centric Bias Measurements
+* Rebalancing Transformation on Train SMOTE- TomekLinks
+* Pre- and Post-Hoc Imbalance Reporting
+* Population Parameter: Sample Weights
+* Post Processing Evaluation: Threshold Tuning
+
+### Implementation
+[Crisp-dm image]
 
 <!-- LICENSE -->
 ## License
@@ -57,8 +92,6 @@ The script is using the following directory tree structure:
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -72,4 +105,5 @@ Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
 
+### References
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
