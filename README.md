@@ -33,8 +33,6 @@ The script is using the following directory tree structure:
 ├── css/               # css files for the team submission landing page 
 ├── assets/            # images for the team submission landing page 
 ```
-
-
 ### Installation
 The only technical requirements before running are a Python environment setup on the computer and a Git client to retrieve the code, 
 though you could download our code from GitHub’s website if the latter is problematic. We recommend Anaconda which has setup directions here.  
@@ -57,7 +55,6 @@ Once Python is available and an environment is activated:
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li>
 </ol>
   
-
 **To use the mitigate_disparity.py file:**  
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
