@@ -74,7 +74,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * Python 3.8
-* Requirments are in `scripts\requirements.txt`
+* [Requirments](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/requirements.txt) are in `scripts\requirements.txt`
 * Full report is in [INSERT REPORT URL]().
 
 ### Folder Structure
