@@ -388,9 +388,9 @@ class Mitigator:
                 f.write(html)
         else: print('Error: Unknown OS!')  
         if op_sys == 'Windows':
-            test_df.to_csv(os.path.join(outm_directory_windows, 'rebalanced_train.csv'), index=False)
+            smoted_df.to_csv(os.path.join(outm_directory_windows, 'rebalanced_train.csv'), index=False)
         elif op_sys == 'Linux' or op_sys == 'Darwin':
-            test_df.to_csv(os.path.join(outm_directory_linux_unix, 'rebalanced_train.csv'), index=False)
+            smoted_df.to_csv(os.path.join(outm_directory_linux_unix, 'rebalanced_train.csv'), index=False)
         else: print('Error: Unknown OS!')    
         return smoted_df
         
