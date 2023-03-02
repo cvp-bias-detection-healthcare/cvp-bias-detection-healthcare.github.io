@@ -252,7 +252,7 @@ class Mitigator:
             split. It should contain all features include target y variable).
         2. Performs SMOTE with TomekLinks removal to rebalance data.
         3. Retests smoted train dataset for imbalance.
-        4. Creates a before and after SMOTE report
+        4. Creates a before and after SMOTE report: imbalance_report.html in the reports folder
         5. Saves output predicted dataframe as CSV in output_model directory as rebalanced_train.csv
         '''
         # Imbalance Testing
@@ -433,7 +433,7 @@ class Mitigator:
         6. If thresh_tuning = True (default), threshold tuning procedure is performed.
         7. Final output is input_df with column 'y_hat_tuned' containing the prediction probabilities binned to binary outcomes based on
             tuned thresholds.
-        8. Saves output threshold tuned predicted dataframe as CSV in output_model directory as predicted_test.csv
+        8. Saves output threshold tuned predicted dataframe as CSV in output_model directory as thresh_tuned_test.csv
         '''
         test_df = test_dataframe
         # Prepare test dataframe for prediction
