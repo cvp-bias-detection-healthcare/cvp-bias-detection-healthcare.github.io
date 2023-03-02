@@ -127,10 +127,11 @@ RAM that is greater than or equal to the dataset. <br>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Clinical Setting Usage
-To use our tool to evaluate and improve an ML model used in the prediction of an adverse event or diagnosis of a disease 
-or condition, one should:
 *Note: This challenge and our tool assume you already have a trained LightGBM model from which you have used to generate predictions
 for the test set. If the model is not LightGBM, steps 1-5 below are still functional*
+
+To use our tool to evaluate and improve an ML model used in the prediction of an adverse event or diagnosis of a disease 
+or condition, one should:
 1.	Save the predicted test set as CSV.
 2.	Run the measurement program which will produce a report showing how the model performed across and within the protected 
 features.
