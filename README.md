@@ -66,8 +66,8 @@ a variety of information coupled with expert judgment to recognize sustainable i
 ## Getting Started
 Watch CVP's **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** to view a walkthrough the tool's usage.
 <br /> 
-Below are instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps:
+* Below are instructions on setting up your project locally.
+* To get a local copy up and running follow these simple example steps
 
 *Note: We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)*
 
