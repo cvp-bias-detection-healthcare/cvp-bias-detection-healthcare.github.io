@@ -148,34 +148,33 @@ systemic, sampling, or another type of bias where a new training dataset would b
 of the model. Rerun measure for it the mitigation tool. This will attempt to lower the apparent rate of disparity in the model and 
 yield a fairer outcome.  
 
-### Ethical and Trustworthy AI 
-:::::: {.cols data-latex=""}
+## Ethical and Trustworthy AI 
+* You don’t want unethical bias in the real world
+* You do want bias in the data, because you want bias to reflect the real world
+* You do want best fit bias in the data, because you want the result to accurately reflect the bias in the data
+* You don’t want unethical bias in your business, so it is critical that you appropriately act upon accurate results from AI algorithms
 
-::: {.col data-latex="{0.55\textwidth}"}
-```{r, echo=FALSE, fig.width=5, fig.height=4}
-par(mar = c(4, 4, .2, .1))
-plot(cars, pch = 19)
-```
-:::
+![AI Bias](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/AI%20Bias.PNG)
 
-::: {.col data-latex="{0.05\textwidth}"}
-\ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
+**Social Bias**
+* **Defintion:** "Prohibited grounds of discrimination" (French: motif de distinction illicite) in employment and housing are listed in the federal Canadian Human Rights Act as well as the provincial human rights codes.
 
-::: {.col data-latex="{0.4\textwidth}"}
-The figure on the left-hand side shows the `cars` data.
+* For example, the federal law lists: race, national or ethnic origin, colour, religion, age, sex, sexual orientation, gender identity or expression, marital status, family status, genetic characteristics, disability, and conviction for an offence for which a pardon has been granted or in respect of which a record suspension has been ordered.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-enim ad minim veniam, quis nostrud exercitation ullamco laboris
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur.
-:::
-::::::
+**Considering Fairness: Unwarranted Bias**
+* Maybe we find out that we have a very accurate model, but it still produces disparate outcomes. This may be unfortunate, but is it fair? 
+* An alternative to accounting for unequal outcomes may be to look at the equality of error rates, and whether there are more mistakes for one group of people than another.
 
+### AI Code of Conduct
+<ol> 
+<li> Must be able to disclose ambiguities of a tool being utilized and the risks that are taken</li>
+<li> consider ethics across dynamics and systems </li>
+<li> AI system operations must be able to justify organizational processes around models utilized and track data lineage</li>
+<li> Operations and maturity stages should prioritize stakeholder perception and safety, accountability, transparency, risk assessment, and stakeholder engagement over implementation incentives, validating decisions utilizing complete documentation and written agreements</li>
+<li> Technical documentation is required for all data handling, transformation, and insights to ensure transparency of records, quality, and complexity. </li>
+<li> Risk, quality, safety and bias assessments should be performed on every component, interface, and environment connected to the AI system </li>
+</ol>
+ 
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
@@ -194,4 +193,7 @@ Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github
 Have feedback or questions about this challenge? Please send your feedback or question to [NCATSAIBiasChallenge@mail.nih.gov](NCATSAIBiasChallenge@mail.nih.gov)
 Alternate NCATS Challenge POC: [expeditionhacks@blueclarity.io](expeditionhacks@blueclarity.io)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+Supporting Links
+* [NIST AI Framework](https://www.nist.gov/itl/ai-risk-management-framework)
 
