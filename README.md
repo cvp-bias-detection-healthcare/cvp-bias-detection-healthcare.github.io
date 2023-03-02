@@ -60,14 +60,16 @@ a variety of information coupled with expert judgment to recognize sustainable i
 
 ### Bias Metrics
 ![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-* **Note:** We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
+Watch CVP's **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** to walk through the tool's usage.
+<br /> 
+Below are instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps:
+
+*Note:** We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)*
 
 ### Prerequisites
 * Python 3.8
@@ -101,8 +103,6 @@ RAM that is greater than or equal to the dataset. <br>
 <br />
 
 #### Script Usage <br />
-Watch CVP's **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** to walk through the tool's usage.
-<br /> 
 **To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** <br />
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
@@ -148,6 +148,7 @@ systemic, sampling, or another type of bias where a new training dataset would b
 6.	If team determines the issue is due to model bias and the model algorithm is not LightGBM, proceed to run a LightGBM version 
 of the model. Rerun measure for it the mitigation tool. This will attempt to lower the apparent rate of disparity in the model and 
 yield a fairer outcome.  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Ethical and Trustworthy AI 
 * You don’t want unethical bias in the real world
@@ -156,6 +157,7 @@ yield a fairer outcome.
 * You don’t want unethical bias in your business, so it is critical that you appropriately act upon accurate results from AI algorithms
 
 ![AI Bias](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/AI%20Bias.PNG)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 **Social Bias**
 * **Defintion:** "Prohibited grounds of discrimination" (French: motif de distinction illicite) in employment and housing are listed in the federal Canadian Human Rights Act as well as the provincial human rights codes.
@@ -165,6 +167,7 @@ yield a fairer outcome.
 **Considering Fairness: Unwarranted Bias**
 * Maybe we find out that we have a very accurate model, but it still produces disparate outcomes. This may be unfortunate, but is it fair? 
 * An alternative to accounting for unequal outcomes may be to look at the equality of error rates, and whether there are more mistakes for one group of people than another.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### AI Code of Conduct
 <ol> 
@@ -175,6 +178,8 @@ yield a fairer outcome.
 <li> Technical documentation is required for all data handling, transformation, and insights to ensure transparency of records, quality, and complexity. </li>
 <li> Risk, quality, safety and bias assessments should be performed periodically on every component, interface, and environment connected to the AI system across its lifecycle </li>
 </ol>
+ 
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 <!-- LICENSE -->
 ## License
@@ -197,4 +202,4 @@ Alternate NCATS Challenge POC: [expeditionhacks@blueclarity.io](expeditionhacks@
 
 Supporting Links
 * [NIST AI Framework](https://www.nist.gov/itl/ai-risk-management-framework)
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
