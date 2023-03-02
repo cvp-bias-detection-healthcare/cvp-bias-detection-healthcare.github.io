@@ -158,7 +158,7 @@ yield a fairer outcome.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 **Social Bias**
-* **Defintion:** "Prohibited grounds of discrimination" (French: motif de distinction illicite) in employment and housing are listed in the federal Canadian Human Rights Act as well as the provincial human rights codes.
+* **Protected Groups Definition:** "Prohibited grounds of discrimination" (French: motif de distinction illicite) in employment and housing are listed in the federal Canadian Human Rights Act as well as the provincial human rights codes.
 
 * For example, the federal law lists: race, national or ethnic origin, colour, religion, age, sex, sexual orientation, gender identity or expression, marital status, family status, genetic characteristics, disability, and conviction for an offence for which a pardon has been granted or in respect of which a record suspension has been ordered.
 
