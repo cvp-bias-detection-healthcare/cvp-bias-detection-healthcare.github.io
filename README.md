@@ -122,7 +122,9 @@ RAM that is greater than or equal to the dataset. <br>
   <li>	For this script, the LightGBM model parameters dictionary is another critical field, and you can either keep it as is or modify as you see fit for your dataset </li>
   <li>	Once all required parameter inputs are defined, initialize the Mitigator object and call its methods in this order: transform(), fit(), predict(), measure(). These together will generate the “imbalance_report.html” and the “mitigate_report.html” (same format analysis as “measure_report.html”) in the reports folder. It also outputs the transformed train dataset, the predicted test dataset, and the threshold tuned predicted test dataset to help build an audit trail.</li>
 </ol>
-*For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.*
+
+*For more detailed information on how the mitigation process works including what parameters are required, please reference the readme.txt file.*
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Clinical Setting Usage
