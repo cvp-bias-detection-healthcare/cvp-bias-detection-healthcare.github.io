@@ -198,8 +198,7 @@ Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github
 ### NCATS POC
 Have feedback or questions about this challenge? Please send your feedback or question to [NCATSAIBiasChallenge@mail.nih.gov](NCATSAIBiasChallenge@mail.nih.gov)
 Alternate NCATS Challenge POC: [expeditionhacks@blueclarity.io](expeditionhacks@blueclarity.io)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Supporting Links
+### Supporting Links
 * [NIST AI Framework](https://www.nist.gov/itl/ai-risk-management-framework)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
