@@ -100,7 +100,7 @@ RAM that is greater than or equal to the dataset. <br>
  </ol>
 <br />
 
-### Script Usage <br />
+#### Script Usage <br />
 * Watch CVP's **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** to walk through the tool's usage.<br /> 
 **To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** <br />
 <ol>
@@ -128,10 +128,10 @@ For more detailed information on how the mitigation process works, please refere
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Clinical Setting Usage
-To use our tool to evaluate and improve an ML model* used in the prediction of an adverse event or diagnosis of a disease 
+To use our tool to evaluate and improve an ML model used in the prediction of an adverse event or diagnosis of a disease 
 or condition, one should:
-* This challenge and our tool assume you already have a trained LightGBM model from which you have used to generate predictions
-for the test set. If the model is not LightGBM, steps 1-5 below are still functional
+*Note: This challenge and our tool assume you already have a trained LightGBM model from which you have used to generate predictions
+for the test set. If the model is not LightGBM, steps 1-5 below are still functional*
 1.	Save the predicted test set as CSV.
 2.	Run the measurement program which will produce a report showing how the model performed across and within the protected 
 features.
@@ -144,7 +144,7 @@ sickle cell anemia, Alzheimer’s, Parkinson’s or another condition that has u
 race), this may be expected and not a large concern. 
 5.	The review team should decide if the bias report has found apparent social/predictive biases or whether the issue may be 
 systemic, sampling, or another type of bias where a new training dataset would be more appropriate.
-6.	If team determine the issue is due to model bias and the model algorithm is not LightGBM, proceed to run a LightGBM version 
+6.	If team determines the issue is due to model bias and the model algorithm is not LightGBM, proceed to run a LightGBM version 
 of the model. Rerun measure for it the mitigation tool. This will attempt to lower the apparent rate of disparity in the model and 
 yield a fairer outcome.  
 
