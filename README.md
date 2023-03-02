@@ -8,17 +8,22 @@ Artificial intelligence algorithms are increasingly being adopted as decision-ma
 decision-makers. Machine learning models used in this fashion may unintentionally amplify or even create bias because of choices made during
 development, or they may become biased from data that they were trained on. Due to the increasing use of AI systems to supplement regular 
 decision-making and deep-rooted disparities in the US healthcare system where this training data comes from, there have been growing demands 
-for model transparency, explainability, and interpretability to determine the presence of bias. CVP’s Data Science Team investigated ways to 
+for model transparency, explainability, and interpretability to determine the presence of bias. **CVP’s Data Science Team** investigated ways to 
 automatically measure certain types of bias and mitigate them without human intervention. 
 
 This tool was inspired by our hands-on experience that bias can manifest in many obvious and not-obvious forms. We devised a solution which 
-aims to support complex decision-making by giving people simple insights to make smart determinations. This also helps us identify our own 
-inherent bias, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
-bias not inherent in the real world) can be minimized, and real-world bias can be better understood. 
-
+aims to support **complex decision-making** by *giving people simple insights to make smart determinations*. This also helps us identify our own 
+**inherent bias**, like confirmation  bias where we find what we expect. Bias is inevitable, but with effective tools, unwarranted bias (i.e., 
+bias not inherent in the real world) can be minimized, and real-world bias can be better understood. <br />
+*Please reference the **[Full Report](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf)** for more information*
 
 ### Bias Detection Tool Architecture
 ![AI Bias Tool Architecture](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/e32af3038ab9d87ac031e5171713adff2145dd73/assets/img/23-003-001-02_NCATS%20AI%20Challenge-02.png)
+
+Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
+measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
+one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
+outcomes across the country.
 
 By following the installation directions below, the tool’s **architectural capabilities** include the following:  </br>
 *	Run locally on a laptop or desktop  </br>
@@ -31,10 +36,10 @@ If deployed in a cloud server such as AWS or Azure, this solution can supplement
 fairness and implementation tools, dashboards, and scorecards and other tools capable of reviewing many different models to provide output back </br>
 to reviewers. </br>
 
-#### Bias Detection and Mitigation Tool for Clinical Decision Making
-Our AI tool (See Architecture diagram below) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
+### Bias Detection and Mitigation Tool for Clinical Decision Making
+Our AI tool (Reference Architecture diagram above) aims to increase awareness of potential bias and facilitate stakeholder engagement and oversight by 
 producing an automatically generated Measure Report on several measures like demographic parity and equalized opportunity. Instead of using 
-predefined protected and reference classes, we analyze across entire demographic or protected features. We believe that the groups being 
+predefined protected and reference classes, we analyze across entire **demographic or protected features**. We believe that the groups being 
 discriminated against can change over time, and we do not want to introduce any bias by only examining certain classes. By examining all groups,
 we are able to track these changes and assess holistic disparity. The report dives deep into each protected feature (e.g., race, age, gender) 
 to show where bias is detected. This allows a knowledgeable reviewer, well-informed on the topic, to quickly spot where the bias is and decide 
@@ -46,37 +51,28 @@ the more we realized they are several loosely related problems all falling under
 bias. Much like the complexity surrounding “solving” the nation’s deficit, the identification, measurement, and mitigation of AI Bias requires 
 a variety of information coupled with expert judgment to recognize sustainable improvements over time. 
 
-#### Capabilities
+### Mitigation Capabilities
 * Calculating the Mitigation-centric Bias Measurements
 * Rebalancing Transformation on Train SMOTE- TomekLinks
 * Pre- and Post-Hoc Imbalance Reporting
 * Population Parameter: Sample Weights
-* Post Processing Evaluation: Threshold Tuning
-Please reference the **full report** [HERE]() for more information on the scope and capabilities
+* Post Processing Evaluation: Threshold Tuning <br />
 
-#### Bias Metrics
-[INSERT IMAGE]
-
-#### Outcome
-Our team successfully reduced social bias when training and optimizing a LightGBM (gradient-boosted decision tree) model through effective bias 
-measurement and mitigation. Our solution is runnable on any modern PC, in an office or in the cloud, and can be used on any structured dataset. With only
-one executable Python script and one Python module, it will first measure and then mitigate many types of bias, leading to more equitable healthcare 
-outcomes across the country.
-
-[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)
+### Bias Metrics
+![Metrics](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/assets/img/Metrics_NIH_Challenge.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
-
-* We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
+* **Note:** We have also created a Google Colab notebook that contains the retrieval of the source code, setup of the environment, and running of our solution with example data. It is available at [THIS GOOGLE COLAB LINK](https://colab.research.google.com/drive/1KP64rF6k-DK5F83OYkTwWidvuVzPKhmo?usp=sharing)
 
 ### Prerequisites
 * Python 3.8
 * [Requirments](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/requirements.txt) are in `scripts\requirements.txt`
-* Full report is in [INSERT REPORT URL]().
+* Full report is in [Bias Detection Report- NCATS Challenge Submission](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/Team%20CVP%20Submission%20-%20final.pdf).
 
 ### Folder Structure
 The script is using the following directory tree structure:
@@ -96,9 +92,7 @@ though you could download our code from GitHub’s website if the latter is prob
 Note: CPU, RAM, and storage requirements are dependent on the size of the dataset you wish to measure and mitigate bias on. You should generally have
 RAM that is greater than or equal to the dataset. <br>
 <br>
-
-**Once Python is available and an environment is activated:**
-<br />
+**Once Python is available and an environment is activated:** <br />
 <ol>
   <li> Run <code>Git clone</code> on the [cvp-bias-detection-healthcare.github.io](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io) repository
     </li>
@@ -106,15 +100,18 @@ RAM that is greater than or equal to the dataset. <br>
  </ol>
 <br />
 
-**To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** 
+### Script Usage <br />
+* Watch CVP's **[Bias Detection Tool Youtube Video](https://youtu.be/O4GG6Ph55U8)** to walk through the tool's usage.<br /> 
+**To use the [measure_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/measure_disparity.py) file:** <br />
 <ol>
   <li>	Open “measure_disparity.py”, located in the scripts folder, in a text editor. </li> 
   <li> The first 15 lines of code are used for storing metadata about your dataset of interest. Please modify them as needed to locate the data, tag the protected <br /> features, and label which columns have the probabilities, the true labels and sample weights. Save your changes. </li> 
   <li> Run “python measure_disparity.py”. An HTML report (“measure_rerport.html”) will be automatically generated in the “reports” folder </li> 
   <li> Double click it or transfer to a computer with an internet connected web browser to review it. </li>
 </ol>
-  
-**To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file:**  
+ <br />
+ 
+**To use the [mitigate_disparity.py](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/blob/main/scripts/mitigate_disparity.py) file:** <br />
 <ol>
   <li>	As required by the challenge, the mitigate script returns a Python object/class with fit(), transform(), and predict() methods in addition to a measure() method for report generation. Read the README inline comments for the class creation instance and class methods to understand the arguments and parameters they need as input  </li>
   <li>	The mitigate_disparity.py file needs to be imported as a module in another notebook or a .py script. </li>
@@ -128,12 +125,60 @@ RAM that is greater than or equal to the dataset. <br>
 </ol>
     <br />
 For more detailed information on how the mitigation process works, please reference the code comments in the GitHub code.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Clinical Setting Usage
+To use our tool to evaluate and improve an ML model* used in the prediction of an adverse event or diagnosis of a disease 
+or condition, one should:
+* This challenge and our tool assume you already have a trained LightGBM model from which you have used to generate predictions
+for the test set. If the model is not LightGBM, steps 1-5 below are still functional
+1.	Save the predicted test set as CSV.
+2.	Run the measurement program which will produce a report showing how the model performed across and within the protected 
+features.
+3.	At a minimum, create a review group of a data scientist (ideally the one who made the model) and a medical practitioner who
+is familiar with treating or diagnosing the condition. 
+4.	Have this group examine the report to determine what was found to be biased and where they think the bias is coming from. 
+The report will highlight areas of concern, but no AI will have visibility into sampling problems that may have impacted the 
+training data or domain knowledge as to whether that disparity is normal. For example, if the model was for the diagnosis of 
+sickle cell anemia, Alzheimer’s, Parkinson’s or another condition that has uneven impact across protected features (e.g., age,
+race), this may be expected and not a large concern. 
+5.	The review team should decide if the bias report has found apparent social/predictive biases or whether the issue may be 
+systemic, sampling, or another type of bias where a new training dataset would be more appropriate.
+6.	If team determine the issue is due to model bias and the model algorithm is not LightGBM, proceed to run a LightGBM version 
+of the model. Rerun measure for it the mitigation tool. This will attempt to lower the apparent rate of disparity in the model and 
+yield a fairer outcome.  
+
+### Ethical and Trustworthy AI 
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.55\textwidth}"}
+```{r, echo=FALSE, fig.width=5, fig.height=4}
+par(mar = c(4, 4, .2, .1))
+plot(cars, pch = 19)
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.4\textwidth}"}
+The figure on the left-hand side shows the `cars` data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+:::
+::::::
+
 <!-- LICENSE -->
 ## License
 Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -143,10 +188,9 @@ Distributed under the BSD 3 License. See `LICENSE.txt` for more information.
 * Lauren Winstead - laurenwinstead@cvpcorp.com 
 * Wei Chien - weichien@cvpcorp.com 
 * Rose Anderson - roseanderson@cvpcorp.com
-
 Project Link: [https://github.com/cvp-bias-detection-healthcare/](https://github.com/cvp-bias-detection-healthcare/cvp-bias-detection-healthcare.github.io/)
 
-For any specific questions regarding the nature and scope of the challenge, please email [EMAIL]
+### NCATS POC
 Have feedback or questions about this challenge? Please send your feedback or question to [NCATSAIBiasChallenge@mail.nih.gov](NCATSAIBiasChallenge@mail.nih.gov)
 Alternate NCATS Challenge POC: [expeditionhacks@blueclarity.io](expeditionhacks@blueclarity.io)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
