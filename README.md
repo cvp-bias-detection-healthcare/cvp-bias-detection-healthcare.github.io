@@ -168,11 +168,11 @@ yield a fairer outcome.
 ### AI Code of Conduct
 <ol> 
 <li> Must be able to disclose ambiguities of a tool being utilized and the risks that are taken</li>
-<li> consider ethics across dynamics and systems </li>
-<li> AI system operations must be able to justify organizational processes around models utilized and track data lineage</li>
+<li> Must consider ethics across dynamics and systems </li>
+<li> AI system operations must be able to justify organizational processes around models utilized and track data lineage </li>
 <li> Operations and maturity stages should prioritize stakeholder perception and safety, accountability, transparency, risk assessment, and stakeholder engagement over implementation incentives, validating decisions utilizing complete documentation and written agreements</li>
 <li> Technical documentation is required for all data handling, transformation, and insights to ensure transparency of records, quality, and complexity. </li>
-<li> Risk, quality, safety and bias assessments should be performed on every component, interface, and environment connected to the AI system </li>
+<li> Risk, quality, safety and bias assessments should be performed periodically on every component, interface, and environment connected to the AI system across its lifecycle </li>
 </ol>
  
 <!-- LICENSE -->
